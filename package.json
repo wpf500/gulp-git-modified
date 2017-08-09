@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "dependencies": {
+    "gulp-batch-replace": "0.0.0",
     "through2": "^2.0.3"
   },
   "devDependencies": {},

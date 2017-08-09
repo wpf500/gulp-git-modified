@@ -2,6 +2,8 @@ var exec = require('child_process').exec;
 var path = require('path');
 var through = require('through2');
 
+var batchReplace = require('gulp-batch-replace');
+
 var cache = {};
 
 function modified(basePath) {
@@ -21,4 +23,12 @@ function modified(basePath) {
 }
 
 module.exports = modified;
-module.exports.cache = cache;
+module.exports.replace = function () {
+    var replace = [];
+
+    for (var key in cache) {
+        replace.push([key, cache[key]]);
+    }
+
+    return batchReplace(replace);
+};
