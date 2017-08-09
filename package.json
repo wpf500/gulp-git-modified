@@ -1,0 +1,23 @@
+{
+  "name": "gulp-git-modified",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "through2": "^2.0.3"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wpf500/gulp-git-modified.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/wpf500/gulp-git-modified/issues"
+  },
+  "homepage": "https://github.com/wpf500/gulp-git-modified#readme"
+}
